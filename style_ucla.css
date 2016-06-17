@@ -16,10 +16,29 @@ hr {
 .noshow {
 	display: none;
 }
+.help {
+	height: 600px;
+	width: 600px;
+	margin-top: -300px;
+	margin-left: -300px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	color: white;
+	background-color: black;
+	border-radius: 20px;
+	opacity: 0.95;
+	z-index: 10;
+}
+.help_info {
+	margin-top: 40px;
+	margin-left: 40px;
+	margin-right: 40px;
+}
 .main {
-	width: 850px; 
+	width: 850px;
 	padding: 0px;
-	margin:auto; 
+	margin:auto;
 	z-index: -5;
 }
 
@@ -55,24 +74,24 @@ hr {
 	height:20px;
 	padding-top:0px;
 	/* padding-bottom:10px */
-	margin: auto;  
+	margin: auto;
 	border-radius: 0px;
 	opacity: 0.80;
 	/*position:fixed;
 	top:10;*/
 }
 #bottom {
-	height:80px; 
+	height:80px;
 	padding-top:20px;
-	margin:auto;  
+	margin:auto;
 	border-radius: 0px;
 	opacity: 0.7;
 }
 #navibar {
 	height:80px;
-	padding-top: 5px; 
-	text-align:center; 
-	margin:auto; 
+	padding-top: 5px;
+	text-align:center;
+	margin:auto;
 	opacity: 1.0;
 	/*position:fixed;
 	top: 20px;*/
@@ -91,7 +110,7 @@ hr {
 	/* padding: 0px; */
 	background-color: none;
 	display: inline-block;
-	/* text-align:center; */ 
+	/* text-align:center; */
 	opacity: 0.8;
 }
 #intro_left {
@@ -111,7 +130,7 @@ hr {
 #intro_right {
 	width: 300px;
 	/* margin-right: 20px; */
-	margin-top: 40px;
+	margin-top: 58px;
 	margin-bottom: 60px;
 	display: inline-block;
 	vertical-align: top;
@@ -233,19 +252,19 @@ div.a_navi_here {
 	height: 24px;
 	padding-top: 4px;
 	text-align: center;
-	border-radius: 5px;
+	border-radius: 3px;
 }
 div.a_navi {
 	/*width: 140px;*/
 	height: 24px;
 	padding-top: 4px;
 	text-align: center;
-	border-radius: 5px;
+	border-radius: 3px;
 }
 /*
 div.a_navi:link, div.a_navi:visited {
 	color: #C8D6F8;
-	text-decoration: none;	
+	text-decoration: none;
 }*/
 div.a_navi:hover {
 	color: white;
@@ -253,6 +272,7 @@ div.a_navi:hover {
 	background-color: #6982E5;
 }
 
+/* font for normal paragraph */
 .p1 {
 	font-size: 14px;
 	line-height: 18px;
@@ -269,11 +289,13 @@ div.a_navi:hover {
 	color: #1C1C1C;
 	word-spacing: length;
 }
+/* font for bottom words */
 .p2 {
 	font-size: 14px;
 	font-family: Arial;
 	color: #1C1C1C;
 }
+/* for some words in CV */
 .p3 {
 	font-size: 14px;
 	line-height: 35px;
@@ -288,4 +310,14 @@ div.a_navi:hover {
 	font-family: Arial;
 	color: #1C1C1C;
 	word-spacing: length;
+}
+.p4 {
+	font-size: 18px;
+	font-family: Monospace, Helvetica, Arial;
+	color: #CDCDCD;
+}
+.p4a {
+	font-size: 18px;
+	font-family: Verdana, Monospace, Helvetica, Arial;
+	color: white;
 }

@@ -4,35 +4,46 @@
     <head>
 		<link type="text/css" rel="stylesheet" href="style_ucla.css"/>
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script> 
-		<script type="text/javascript" src="app.js"></script>
-		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+        <!-- jQuery UI -->
+        <script type="text/javascript" src="app.js"></script>
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head>
+		<!-- Set up UTF-8 -->
+
 		<link rel="shortcut icon" href="https://dl.dropboxusercontent.com/u/63140572/Html/Kai.png"/>
 		<title> Ping-Kai Hu </title>
     </head>
 
 	<body>
 		<!--<img src="IMAG1873.jpg" width="100%">-->
-		
-		<!-- UCLA Logo -->
-		<div id="uc">	
-			<img src="https://dl.dropboxusercontent.com/u/63140572/Html/The_University_of_California_UCLA.svg" 
-			width="300" align="right" border="0"/>	
+
+		<!--
+                UCLA Logo
+        -->
+		<div id="uc">
+			<img src="https://dl.dropboxusercontent.com/u/63140572/Html/The_University_of_California_UCLA.svg"
+			width="300" align="right" border="0"/>
 		</div>
-		
-		<!-- Colored top division -->	
+
+		<!--
+                Colored top division
+        -->
 		<div class="color1" id="top">
-			<!-- <div id="title"><h1> Ping-Kai Hu's Website </h1></div> -->			
+			<!-- <div id="title"><h1> Ping-Kai Hu's Website </h1></div> -->
 		</div>
-		
-		<!-- The Bar for Navigators -->	
+
+		<!--
+                The Bar for Navigators
+        -->
 		<div class="color3" id="navibar">
-				
+
 			<div id="navi">
 				<table style="float:right;">
 					<tr>
 						<td class="a_navi"> - &nbsp;&nbsp; </td>
-						
+
 						<td><a class="a_navi home" href=""><div class="a_navi_here">&nbsp; HOME &nbsp;</div></a></td>
 						<!--<td><div class="anavi_here">&nbsp; HOME &nbsp;</div></td>-->
 						<td><a class="a_navi CV" href="#CV"><div class="a_navi">&nbsp;&nbsp;&nbsp;&nbsp; CV &nbsp;&nbsp;&nbsp;&nbsp;</div></a></td>
@@ -40,30 +51,63 @@
 						<td><a class="a_navi drawing" href="#drawing"><div class="a_navi">&nbsp; DRAWING &nbsp;</div></a></td>
 						<td><a class="a_navi teaching" href="#teaching"><div class="a_navi">&nbsp; TEACHING &nbsp;</div></a></td>
 						<!--<td><div style="width:80px; height:10px; margin-botom:15px; border-bottom: 5px solid #C8D6F8;"></div></td>-->
-						
+
 						<td class="a_navi"> &nbsp;&nbsp; - </td>
 					</tr>
 				</table>
 			</div>
-				
+
 		</div>
-		
-		<!-- Main: Homepage -->
+
+		<!--
+                'HELP' panel
+        -->
+		<div class="help noshow">
+
+            <div class="p4 help_info">
+                <h2 class="p4" style="font-size:24px; text-align:center">NEED HELP?</h2>
+                <br>
+                <p>
+                    If you have trouble with English, try
+                    <a class="p4a" href="http://www.physics.ucla.edu/~pingkai.hu/cht">
+                        '中文網站'
+                    </a>
+                    <br><br><br>
+                    Here is the path to my
+                    <a class="p4a" href="https://github.com/pingkaihu">GitHub</a>
+                    <br><br><br>
+                    Here is the path to my
+                    <a class="p4a" href="http://www.deviantart.com/browse/all/?section=&global=1&q=pingkaihu">
+                        DeviantArt</a>
+                    <br><br><br>
+                    More about physics? See our
+                    <a class="p4a" href="http://pingkai.bol.ucla.edu/Journal_Club.html">
+                        Journal Club
+                    </a>
+                    <br>
+                </p>
+                <p style="text-align:right;"><br> - Ping-Kai</p>
+            </div>
+		</div>
+
+		<!--/////////////////////////
+                Main: Homepage
+            ///////////////////////// -->
 		<div class="main blank show" id="main_home">
-			
+
 			<div id="title">
 				<img src="./svg/pingkai_hu.svg" height="60">
 				<!-- The font to create this svg is "URW Bookman L" -->
 			</div>
 
 			<hr>
-			
+
 			<div class="blank" id="intro_left">
 				<div id="introtext">
 					<h2 class="color4" style="text-indent:10px">Greeting!</h2>
 					<p class="p1">
-						I am Ping-Kai Hu, 
-						currently a PhD candidate working on theoretical physics at UCLA. 
+						I am Ping-Kai Hu,
+						currently a PhD candidate working on theoretical physics at UCLA.
 					</p>
 					<p class="p1">
 						<a class="a1 research" href="#research">My research</a> interests are in the area of high energy physics,
@@ -76,7 +120,7 @@
 						<br>
 						<br>
 					</p>
-				</div>	
+				</div>
 			</div>
 			<div class="blank" id="intro_right">
 				<div class="blank" id="photo">
@@ -97,32 +141,34 @@
 						<tr>
 							<td class="p2">Office:</td>
 							<td class="p2">PAB 1-339</td>
-						</tr>	
+						</tr>
 					</table>
 				</div>
 			</div>
-			
+
 			<hr>
 		</div>
 
-		<!-- Main: CV -->
+		<!--/////////////////////////
+                Main: CV
+            ///////////////////////// -->
 		<div class="main blank noshow" id="main_CV">
 			<div id="title">
 				<img src="./svg/CV.svg" height="60">
 				<!-- The font to create this svg is "URW Bookman L" -->
 			</div>
 			<hr>
-			<div class="p1" style="text-laign:right; color:#A3A3A3; 
+			<div class="p1" style="text-laign:right; color:#A3A3A3;
 			float:right; margin-left:0px; height:10px;
 			display: inline; position:relative;">
-						For more detail,
-						a printable verison of my CV will be available 
-						<a class="a1" href="">here</a>.
+				For more detail,
+				a printable verison of my CV will be available
+				<a class="a1" href="">HERE</a>.
 			</div>
 			<div class="blank" id="intro_left">
 				<div id="introtext">
 					<h1 class="color4"> Ping-Kai Hu </h1>
-					<h3 class="color4" style="text-weight:normal;"> PhD Candidate in Theoretical Physics</h2>
+					<h3 class="color4" style="text-weight:normal;"> PhD Candidate in Theoretical Physics</h3>
 					<hr style="opacity=0.2; color:grey;"/>
 					<p class="p1L">
 						Department of Physics & Astronomy,<br>
@@ -149,12 +195,11 @@
 				</div>
 			</div>
 			<div class="blank" id="intro_right">
-				<br>
 				<div class="blank" id="photo">
 					<img src="https://dl.dropboxusercontent.com/u/63140572/Html/IMG_0329.jpg"  width="240" border="0">
 					<!--<img src="https://dl.dropboxusercontent.com/u/63140572/Html/Kai.jpg "  width="240" border="0">-->
 				</div>
-				
+
 			</div>
 			<hr>
 			<!-- Education -->
@@ -168,7 +213,7 @@
 						<td class="p3">Ph.D. in Physics</td>
 						<td class="p3">
 							&nbsp;&nbsp;&nbsp;&nbsp;
-							<a class="a1" href="http://www.ucla.edu">University of California, Los Angeles</a> 
+							<a class="a1" href="http://www.ucla.edu">University of California, Los Angeles</a>
 							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 						</td>
 						<td class="p3">in progress</td>
@@ -228,8 +273,10 @@
 			<p><br><br><br></p>
 			<hr>
 		</div>
-		
-		<!-- Main: Research -->
+
+		<!--/////////////////////////
+                Main: Research
+            ///////////////////////// -->
 		<div class="main blank noshow" id="main_research">
 			<div id="title">
 				<img src="./svg/research.svg" height="60">
@@ -242,7 +289,7 @@
 					<p class="p1">
 					Brief introduction to my researches ... to be done.
 					</p>
-				</div>	
+				</div>
 			</div>
 			<div class="blank" id="intro_right">
 				<div class="blank" id="photo">
@@ -252,8 +299,10 @@
 			</div>
 			<hr>
 		</div>
-		
-		<!-- Main: Drawing -->
+
+		<!--/////////////////////////
+                Main: Drawing
+            ///////////////////////// -->
 		<div class="main blank noshow" id="main_drawing">
 			<div id="title">
 				<img src="./svg/drawing.svg" height="60">
@@ -266,7 +315,7 @@
 					<p class="p1">
 					Drawing is one of my hobbies.
 					</p>
-				</div>	
+				</div>
 			</div>
 			<div class="blank" id="intro_right">
 				<div class="blank" id="photo">
@@ -275,8 +324,10 @@
 			</div>
 			<hr>
 		</div>
-		
-		<!-- Main: Teaching -->
+
+		<!--/////////////////////////
+                Main: Teaching
+            ///////////////////////// -->
 		<div class="main blank noshow" id="main_teaching">
 			<div id="title">
 				<img src="./svg/teaching.svg" height="60">
@@ -288,9 +339,9 @@
 				<div id="introtext">
 					<p class="p1">
 						This page is all about my teaching.
-						  
+
 					</p>
-				</div>	
+				</div>
 			</div>
 			<div class="blank" id="intro_right">
 				<div class="blank" id="photo">
@@ -315,8 +366,10 @@
 			<hr>
 		</div>
 
-		<!-- Here is the external links -->
-		<div style="text-align:center;">			
+		<!--
+                Here is the external links
+        -->
+		<div style="text-align:center;">
 			<table style="margin: auto; padding-bottom:20px;">
 				<tr>
 						<td><span class="p2">LINKS:</span></td>
@@ -331,12 +384,14 @@
 				</tr>
 			</table>
 		</div>
-		
-		<!-- Colored bottom division --> 
+
+		<!--
+                Colored bottom division
+        -->
 		<div class="color1" id="bottom">
-			
+
 			<p class="p2" style="text-align:center;"> Copyright &copy; 2016 by  Ping-Kai Hu </p>
-			
+
 		</div>
 	</body>
 
