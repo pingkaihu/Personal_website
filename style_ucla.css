@@ -26,14 +26,25 @@ hr {
 	left: 50%;
 	color: white;
 	background-color: black;
-	border-radius: 20px;
-	opacity: 0.95;
+	border-radius: 10px;
+	opacity: 0.9;
 	z-index: 10;
 }
 .help_info {
 	margin-top: 40px;
 	margin-left: 40px;
 	margin-right: 40px;
+}
+.help_close {
+	border: 0.0px solid white;
+	border-radius: 4px;
+	/* background-color: white; */
+	height: 20px;
+	width: 20px;
+	position:relative;
+	top: 20px;
+	left: 550px;
+	opacity: 0.3;
 }
 .main {
 	width: 850px;
@@ -88,7 +99,7 @@ hr {
 	opacity: 0.7;
 }
 #navibar {
-	height:80px;
+	height:60px;
 	padding-top: 5px;
 	text-align:center;
 	margin:auto;
@@ -104,12 +115,12 @@ hr {
 	/*z-index:2;*/
 }
 #title {
-	margin-top: 40px;
+	margin-top: 20px;
+	margin-bottom: 30px;
 	margin-left: 50px;
-	height:  60px;
-	/* padding: 0px; */
+	height:  80px;
 	background-color: none;
-	display: inline-block;
+	/*display: inline-block;*/
 	/* text-align:center; */
 	opacity: 0.8;
 }
@@ -179,56 +190,20 @@ hr {
 	border-left: 1px solid #D1D1D1;
 }
 
-h1 {
-	font-size: 30px;
-	font-family: Helvetica, Impact, Arial;
-	font-weight: bold;
-	/* margin: auto; */
-}
-h4 {
-	font-size: 40px;
-	font-family:  Ubuntu, Verdana, Times, Arial, Helvetica, Impact;
-	/* color: #2AAF00; */
-	/* color: white; */
-	color: #2A2A2A;
-	font-weight: bold;
-	font-style: italic;
-	margin: auto;
-}
-h2 {
-	font-size: 24px;
-	font-family: Helvetica, Arial;
-}
-
 a.a1:link, a.a1:visited {
     /* color: #5285F8; */
     color: #2A57C7;
     text-decoration: none;
-    font-family: Helvetica, Arial;
+    font-family: sans-serif;
 }
 a.a1:hover {
 	color: #FCE62B;
 	background-color: #5285F8;
 }
 
-
-/*.anavi{
-	font-size: 24px;
-	font-family: Arial, Sans-serif;
-	color: #C8D6F8;
-	text-decoration: none;
-}*/
-/*.anavi_here {
-	font-size: 24px;
-	font-family: Arial, Sans-serif;
-	color: white;
-	background-color: #AFC3F3;
-	/*background-color: #C8D6F8;*/
-	/*font-weight: bold;*/
-/* } */
 .a_navi{
 	font-size: 18px;
-	font-family: Arial, Sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 a.a_navi:link, a.a_navi:visited {
 	/*color: #AFC3F3; */
@@ -244,7 +219,7 @@ a.a_navi:hover {
 /* Navigation Button Layout */
 div.a_navi_here {
 	font-size: 18px;
-	font-family: Arial, Sans-serif;
+	font-family: 'Roboto', sans-serif;
 	color: white;
 	/*background-color: #AFC3F3;*/
 	background-color: #4566E7;
@@ -272,49 +247,82 @@ div.a_navi:hover {
 	background-color: #6982E5;
 }
 
+/* Huge Title */
+h1 {
+	font-size: 50px;
+	font-family: 'Julius Sans One', sans-serif;
+	/*font-family: 'Tenor Sans', sans-serif;*/
+	/*font-family: 'Lobster', sans-serif;*/
+	/*font-family: 'ubuntu', sans-serif;*/
+	/*font-family: 'PT Sans Narrow', sans-serif; */
+	/* font-family: 'Cormorant Upright', serif; */
+	font-style: normal;
+	font-weight: 700;
+}
+/* Ping-Kai Hu in Main: CV */
+h2 {
+	font-size: 32px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+}
+/* PhD Candidate in Theoretical Physics */
+h4 {
+	font-size: 20px;
+	font-family: 'Roboto Condensed', sans-serif;
+	/*font-family: 'Fjalla One', sans-serif;*/
+	font-weight: 400;
+}
+/* in CV : Education, Publication, ... */
+h3 {
+	font-size: 24px;
+	font-family: 'Roboto', sans-serif, Helvetica, Arial;
+	font-weight: 300;
+}
+
 /* font for normal paragraph */
 .p1 {
-	font-size: 14px;
-	line-height: 18px;
-	font-family: Arial;
+	font-size: 16px;
+	line-height: 20px;
+	font-family: sans-serif;
 	color: #1C1C1C;
 	word-spacing: normal;
 	/*text-align: justify; */
 	text-indent: 20px;
 }
 .p1L {
-	font-size: 14px;
-	line-height: 18px;
-	font-family: Arial;
+	font-size: 16px;
+	line-height: 20px;
+	font-family: sans-serif;
 	color: #1C1C1C;
 	word-spacing: length;
 }
 /* font for bottom words */
 .p2 {
 	font-size: 14px;
-	font-family: Arial;
+	font-family: 'Roboto', sans-serif;
 	color: #1C1C1C;
 }
 /* for some words in CV */
 .p3 {
-	font-size: 14px;
+	font-size: 16px;
 	line-height: 35px;
-	font-family: Arial;
+	font-family: sans-serif;
 	color: #1C1C1C;
 	word-spacing: length;
 	text-align: center;
 }
 .p3L {
-	font-size: 14px;
+	font-size: 16px;
 	line-height: 30px;
-	font-family: Arial;
+	font-family: sans-serif;
 	color: #1C1C1C;
 	word-spacing: length;
 }
+/* for words in HELP panel */
 .p4 {
 	font-size: 18px;
 	font-family: Monospace, Helvetica, Arial;
-	color: #CDCDCD;
+	color: #DEDEDE;
 }
 .p4a {
 	font-size: 18px;

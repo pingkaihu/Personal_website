@@ -12,6 +12,12 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head>
 		<!-- Set up UTF-8 -->
 
+        <link href="https://fonts.googleapis.com/css?family=Julius Sans One" rel="stylesheet">
+        <!-- Google font for 'Title' -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto Condensed" rel="stylesheet">
+        <!--<link href="https://fonts.googleapis.com/css?family=Fjalla One" rel="stylesheet">-->
+        <!-- Google font for some 'Sans-serif' like font -->
+
 		<link rel="shortcut icon" href="https://dl.dropboxusercontent.com/u/63140572/Html/Kai.png"/>
 		<title> Ping-Kai Hu </title>
     </head>
@@ -44,9 +50,27 @@
 					<tr>
 						<td class="a_navi"> - &nbsp;&nbsp; </td>
 
-						<td><a class="a_navi home" href=""><div class="a_navi_here">&nbsp; HOME &nbsp;</div></a></td>
+						<td><a class="a_navi home" href="#home"><div class="a_navi_here">&nbsp; HOME &nbsp;</div></a></td>
 						<!--<td><div class="anavi_here">&nbsp; HOME &nbsp;</div></td>-->
-						<td><a class="a_navi CV" href="#CV"><div class="a_navi">&nbsp;&nbsp;&nbsp;&nbsp; CV &nbsp;&nbsp;&nbsp;&nbsp;</div></a></td>
+						<td>
+                            <a class="a_navi CV" href="#CV">
+                                <div class="a_navi">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                    CV &nbsp;&nbsp;&nbsp;&nbsp;
+                                </div>
+                            </a>
+                            <!-- Experimental toggle buttom
+                            <div class="noshow" style="position:fixed; opacity:0.7;">
+                                <table>
+                                    <tr>
+                                        <a class="a_navi CV" href="#CV"><div class="a_navi">&nbsp;&nbsp;&nbsp; CV - WEB &nbsp;&nbsp;&nbsp;</div></a>
+                                    </tr>
+                                    <tr>
+                                        <a class="a_navi" href=""><div class="a_navi">&nbsp;&nbsp;&nbsp; CV - PDF &nbsp;&nbsp;&nbsp;</div></a>
+                                    </tr>
+                                </table>
+                            </div>-->
+                        </td>
 						<td><a class="a_navi research" href="#research"><div class="a_navi">&nbsp; RESEARCH &nbsp;</div></a></td>
 						<td><a class="a_navi drawing" href="#drawing"><div class="a_navi">&nbsp; DRAWING &nbsp;</div></a></td>
 						<td><a class="a_navi teaching" href="#teaching"><div class="a_navi">&nbsp; TEACHING &nbsp;</div></a></td>
@@ -64,6 +88,9 @@
         -->
 		<div class="help noshow">
 
+            <div class="help_close">
+                <img src="./svg/cross_white.svg" width='20'/>
+            </div>
             <div class="p4 help_info">
                 <h2 class="p4" style="font-size:24px; text-align:center">NEED HELP?</h2>
                 <br>
@@ -96,7 +123,8 @@
 		<div class="main blank show" id="main_home">
 
 			<div id="title">
-				<img src="./svg/pingkai_hu.svg" height="60">
+                <h1> Ping-Kai Hu </h1>
+				<!--<img src="./svg/pingkai_hu.svg" height="60">-->
 				<!-- The font to create this svg is "URW Bookman L" -->
 			</div>
 
@@ -104,19 +132,20 @@
 
 			<div class="blank" id="intro_left">
 				<div id="introtext">
-					<h2 class="color4" style="text-indent:10px">Greeting!</h2>
-					<p class="p1">
+					<h3 class="color4" style="text-indent:0px; font-weight:700;">Greeting!</h3>
+					<p class="p1L">
 						I am Ping-Kai Hu,
 						currently a PhD candidate working on theoretical physics at UCLA.
 					</p>
-					<p class="p1">
+					<p class="p1L">
 						<a class="a1 research" href="#research">My research</a> interests are in the area of high energy physics,
 						especially neutrino physics, dark matter, and a variety of topics in cosmology.
 						Recently, I try to explore a new scenario for cosmic rays with my advisor
 						<a class="a1" href="http://www.physics.ucla.edu/~kusenko/">Alexander Kusenko</a>.
 					</p>
-					<p class="p1">
-						By the way, this website is still <em>under construction</em>.
+					<p class="p1L">
+						By the way, this website is still
+                        <span style="font-weight:700;">under construction</span>.
 						<br>
 						<br>
 					</p>
@@ -154,23 +183,25 @@
             ///////////////////////// -->
 		<div class="main blank noshow" id="main_CV">
 			<div id="title">
-				<img src="./svg/CV.svg" height="60">
+                <h1> Curriculum Vitae </h1>
+				<!--<img src="./svg/CV.svg" height="60">-->
 				<!-- The font to create this svg is "URW Bookman L" -->
 			</div>
 			<hr>
 			<div class="p1" style="text-laign:right; color:#A3A3A3;
-			float:right; margin-left:0px; height:10px;
+			float:right; margin-left:0px; height:20px;
 			display: inline; position:relative;">
 				For more detail,
 				a printable verison of my CV will be available
-				<a class="a1" href="">HERE</a>.
+				<a class="a1" href="">HERE</a>
+                .
 			</div>
 			<div class="blank" id="intro_left">
 				<div id="introtext">
-					<h1 class="color4"> Ping-Kai Hu </h1>
-					<h3 class="color4" style="text-weight:normal;"> PhD Candidate in Theoretical Physics</h3>
+					<h2 class="color4"> Ping-Kai Hu </h2>
+					<h4 class="color4" style="line-height: 0%;"> PhD Candidate in Theoretical Physics</h4>
 					<hr style="opacity=0.2; color:grey;"/>
-					<p class="p1L">
+					<p class="p1L" style="margin-top:20px;">
 						Department of Physics & Astronomy,<br>
 						Univsersity of California, Los Angeles<br>
 						<br>
@@ -204,7 +235,7 @@
 			<hr>
 			<!-- Education -->
 			<div id="colL">
-				<h2 class="color4" >Education</h2>
+				<h3 class="color4" >Education</h3>
 				<p><br><br></p>
 			</div>
 			<div id="colR">
@@ -232,7 +263,7 @@
 			</div>
 			<!-- Honor -->
 			<div id="colL">
-				<h2 class="color4" >Honor</h2>
+				<h3 class="color4" >Honor</h3>
 			</div>
 			<div id="colR">
 				<table>
@@ -248,7 +279,7 @@
 			</div>
 			<!-- Conference -->
 			<div id="colL">
-				<h2 class="color4" >Conference</h2>
+				<h3 class="color4" >Conference</h3>
 			</div>
 			<div id="colR">
 				<table>
@@ -279,7 +310,8 @@
             ///////////////////////// -->
 		<div class="main blank noshow" id="main_research">
 			<div id="title">
-				<img src="./svg/research.svg" height="60">
+                <h1> Research / Study </h1>
+                <!--<img src="./svg/research.svg" height="60">-->
 				<!-- The font to create this svg is "URW Bookman L" -->
 			</div>
 			<hr>
@@ -305,7 +337,8 @@
             ///////////////////////// -->
 		<div class="main blank noshow" id="main_drawing">
 			<div id="title">
-				<img src="./svg/drawing.svg" height="60">
+                <h1> Drawing </h1>
+                <!--<img src="./svg/drawing.svg" height="60">-->
 				<!-- The font to create this svg is "URW Bookman L" -->
 			</div>
 			<hr>
@@ -330,7 +363,8 @@
             ///////////////////////// -->
 		<div class="main blank noshow" id="main_teaching">
 			<div id="title">
-				<img src="./svg/teaching.svg" height="60">
+                <h1> Teaching </h1>
+				<!--<img src="./svg/teaching.svg" height="60">-->
 				<!-- The font to create this svg is "URW Bookman L" -->
 			</div>
 			<hr>
@@ -350,7 +384,7 @@
 			</div>
 			<hr>
 			<div id="text">
-				<h2 class="color4" style="text-indent:10px;">Lecture Notes</h2>
+				<h3 class="color4" style="text-indent:10px;">Lecture Notes</h3>
 				<ul>
 					<li class="p1"><a class="a1" href="https://dl.dropboxusercontent.com/u/63140572/Html/D_notation.pdf">
 						Notes on Dirac Notation</a></li>
@@ -358,7 +392,7 @@
 			</div>
 			<hr>
 			<div id="text">
-				<h2 class="color4" style="text-indent:10px;">Courses</h2>
+				<h3 class="color4" style="text-indent:10px;">Courses</h3>
 				<ul>
 					<li class="p1">Physics 115 - Quantum Mechanics</li>
 				</ul>
