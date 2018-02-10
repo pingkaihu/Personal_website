@@ -1,256 +1,200 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <!-- Style Stuff -->
+    <link type="text/css" rel="stylesheet" href="style.css"/>
+      <!-- Google font for 'Title' -->
+    <link type="text/css" rel="stylesheet" href="font_script/font.css"/>
+    <!-- <link href="https://fonts.googleapis.com/css?family=Julius Sans One" rel="stylesheet"> -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto Condensed" rel="stylesheet"> -->
+    <!-- Script Stuff -->
+    <script type="text/javascript" src="font_script/jquery.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script> -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script> -->
+    <script type="text/javascript" src="app.js" async></script>
 
-    <head>
-		<link type="text/css" rel="stylesheet" href="style_ucla.css"/>
+    <link rel="shortcut icon" href="pic/Kai.png"/>
+    <title> Ping-Kai Hu </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <META HTTP-EQUIV="EXPIRES" CONTENT="Wed, 8 May 2018 00:00:00 GMT">
+  </head>
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-        <!-- jQuery UI -->
-        <script type="text/javascript" src="app.js"></script>
-
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head>
-		<!-- Set up UTF-8 -->
-
-        <link href="https://fonts.googleapis.com/css?family=Julius Sans One" rel="stylesheet">
-        <!-- Google font for 'Title' -->
-        <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto Condensed" rel="stylesheet">
-        <!--<link href="https://fonts.googleapis.com/css?family=Fjalla One" rel="stylesheet">-->
-        <!-- Google font for some 'Sans-serif' like font -->
-
-		<link rel="shortcut icon" href="http://www.physics.ucla.edu/~pingkai.hu/pic/Kai.png"/>
-		<title> Ping-Kai Hu </title>
-    </head>
-
-	<body>
-		<!--<img src="IMAG1873.jpg" width="100%">-->
-
-		<!--
-                UCLA Logo
-        -->
-		<div id="uc">
-			<img src="https://dl.dropboxusercontent.com/u/63140572/Html/The_University_of_California_UCLA.svg"
-			width="300" align="right" border="0"/>
+  <body>
+    <!-- UCLA logo -->
+    <div style="position:fixed; top:-100px; right:100px; opacity:0.1; z-index:-1">
+			<img src="svg/The_University_of_California_UCLA.svg" width="300"
+      align="right" border="0"/>
 		</div>
-
-		<!--
-                Colored top division
-        -->
-		<div class="color1" id="top">
-			<!-- <div id="title"><h1> Ping-Kai Hu's Website </h1></div> -->
-		</div>
-
-		<!--
-                The Bar for Navigators
-        -->
-		<div class="color3" id="navibar">
-
-			<div id="navi">
-				<table style="float:right;">
-					<tr>
-						<td class="a_navi"> - &nbsp;&nbsp; </td>
-
-						<td><a class="a_navi home" href="#home"><div class="a_navi_here">&nbsp; HOME &nbsp;</div></a></td>
-						<!--<td><div class="anavi_here">&nbsp; HOME &nbsp;</div></td>-->
-						<td>
-                            <a class="a_navi CV" href="#CV">
-                                <div class="a_navi">
-                                    &nbsp;&nbsp;&nbsp;&nbsp;
-                                    CV &nbsp;&nbsp;&nbsp;&nbsp;
-                                </div>
-                            </a>
-                            <!-- Experimental toggle buttom
-                            <div class="noshow" style="position:fixed; opacity:0.7;">
-                                <table>
-                                    <tr>
-                                        <a class="a_navi CV" href="#CV"><div class="a_navi">&nbsp;&nbsp;&nbsp; CV - WEB &nbsp;&nbsp;&nbsp;</div></a>
-                                    </tr>
-                                    <tr>
-                                        <a class="a_navi" href=""><div class="a_navi">&nbsp;&nbsp;&nbsp; CV - PDF &nbsp;&nbsp;&nbsp;</div></a>
-                                    </tr>
-                                </table>
-                            </div>-->
-                        </td>
-						<td><a class="a_navi research" href="#research"><div class="a_navi">&nbsp; RESEARCH &nbsp;</div></a></td>
-						<td><a class="a_navi drawing" href="#drawing"><div class="a_navi">&nbsp; DRAWING &nbsp;</div></a></td>
-						<td><a class="a_navi teaching" href="#teaching"><div class="a_navi">&nbsp; TEACHING &nbsp;</div></a></td>
-						<!--<td><div style="width:80px; height:10px; margin-botom:15px; border-bottom: 5px solid #C8D6F8;"></div></td>-->
-
-						<td class="a_navi"> &nbsp;&nbsp; - </td>
-					</tr>
-				</table>
-			</div>
-
-		</div>
-
-		<!--
-                'HELP' panel
-        -->
+    <!-- HELP panel -->
 		<div class="help noshow">
-
-            <div class="help_close">
-                <img src="./svg/cross_white.svg" width='20'/>
-            </div>
-            <div class="p4 help_info">
-                <h2 class="p4" style="font-size:24px; text-align:center">NEED HELP?</h2>
-                <br>
-                <p>
-                    If you have trouble with English, try
-                    <a class="p4a" href="http://www.physics.ucla.edu/~pingkai.hu/cht">
-                        '中文網站'
-                    </a>
-                    <br><br><br>
-                    Here is the path to my
-                    <a class="p4a" href="https://github.com/pingkaihu">GitHub</a>
-                    <br><br><br>
-                    Here is the path to my
-                    <a class="p4a" href="http://www.deviantart.com/browse/all/?section=&global=1&q=pingkaihu">
-                        DeviantArt</a>
-                    <br><br><br>
-                    More about physics? See our
-                    <a class="p4a" href="http://pingkai.bol.ucla.edu/Journal_Club.html">
-                        Journal Club
-                    </a>
-                    <br>
-                </p>
-                <p style="text-align:right;"><br> - Ping-Kai</p>
-            </div>
+      <div class="help_close">
+        <img src="svg/cross_white.svg" width='100%'>
+      </div>
+      <div class="help_info" style="width:90%; padding:5%;">
+        <h2 class="p4" style="font-size:24px; text-align:center">NEED HELP?</h2>
+        <br>
+        <p class="p4">If you have trouble with English, try
+          <a class="p4" href="http://www.physics.ucla.edu/~pingkai.hu/cht">
+            '中文網站'</a></p>
+        <br>
+        <p class="p4">Here is the path to my
+          <a class="p4" href="https://github.com/pingkaihu">GitHub</a></p>
+        <br>
+        <p class="p4">Here is the path to my
+          <a class="p4" href="https://www.kaggle.com/pingkaihu">Kaggle</a></p>
+        <br>
+        <p class="p4">Here is the path to my
+          <a class="p4" href="http://www.deviantart.com/browse/all/?section=&global=1&q=pingkaihu">
+            DeviantArt</a></p>
+        <br>
+        <p class="p4">More about physics? See our
+          <a class="p4" href="http://pingkai.bol.ucla.edu/Journal_Club.html">
+            Journal Club</a></p>
+        <br>
+        <p class="p4" style="text-align:right;"><br> - Ping-Kai</p>
+      </div>
 		</div>
-
-		<!--/////////////////////////
-                Main: Homepage
-            ///////////////////////// -->
-		<div class="main blank show" id="main_home">
-
-			<div id="title">
-                <h1> Ping-Kai Hu </h1>
-				<!--<img src="./svg/pingkai_hu.svg" height="60">-->
-				<!-- The font to create this svg is "URW Bookman L" -->
+    <div class="header">
+      <div class="color1" style="height:20px;"></div>
+      <div class="nav-bar">
+        <table style="float:right;"><tr>
+          <td>
+            <a class="nav" href="#home"><div class="nav_here">
+              &nbsp; HOME &nbsp;
+            </div></a>
+          </td>
+          <td>
+            <a class="nav" href="#CV"><div class="nav">
+              &nbsp;&nbsp;&nbsp;&nbsp;CV&nbsp;&nbsp;&nbsp;&nbsp;
+            </div></a>
+          </td>
+          <td>
+            <a class="nav" href="#research"><div class="nav">
+              &nbsp; RESEARCH &nbsp;
+            </div></a>
+          </td>
+          <td>
+            <a class="nav" href="#drawing"><div class="nav">
+              &nbsp; DRAWING &nbsp;
+            </div></a>
+          </td>
+          <td>
+            <a class="nav" href="#teaching"><div class="nav">
+              &nbsp; TEACHING &nbsp;
+            </div></a>
+          </td>
+        </tr></table>
+      </div>
+    </div>
+    <!-- Home -->
+    <div id="home" class="torso">
+      <div class="title">
+        <h1>Ping-Kai Hu</h1>
+      </div>
+      <hr>
+      <div class="column1">
+        <h3 style="text-indent:0px; font-weight:700;">Greeting!</h3>
+        <p>
+          I am Ping-Kai Hu, currently a PhD candidate working on theoretical
+          physics at UCLA.
+        </p>
+        <p>
+          <a class="a1" href="#research">My research</a>
+          interests are in the area of high energy physics,
+          especially neutrino physics, dark matter, and a variety of topics in
+          cosmology. Recently, I try to explore a new scenario for cosmic rays
+          with my advisor
+          <a class="a1" href="http://www.physics.ucla.edu/~kusenko/">
+            Alexander Kusenko</a>.
+        </p>
+        <p>
+          By the way, this website is still
+          <span style="font-weight:700;">under construction</span>.
+        </p>
+      </div>
+      <div class="column2" style="padding-top:70px">
+        <img src="pic/P1030217.jpg"  width="100%" border="0">
+        <table>
+          <tr>
+            <td class="p2">Email:</td>
+            <td><a class="p1L a1" href="mailto:pingkai.hu@gmail.com">
+              pingkai.hu@gmail.com</a></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><a class="p1L a1" href="mailto:pingkai.hu@physics.ucla.edu">
+              pingkai.hu@physics.ucla.edu</a></td>
+          </tr>
+          <tr><td> </td></tr>
+          <tr>
+            <td class="p2">Office:</td>
+            <td class="p2">PAB 1-339</td>
+          </tr>
+        </table>
+      </div>
+      <br>
+      <hr>
+    </div>
+    <!-- CV -->
+    <div id="CV" class="torso noshow">
+      <div class="title">
+        <h1> Curriculum Vitae </h1>
+      </div>
+      <hr>
+      <div class="p" style="color:#A3A3A3; float:right; height:20px;
+			  display: inline;"> For more detail, a printable verison of my CV will
+        be available <a class="a1" href="">HERE</a>.
 			</div>
-
-			<hr>
-
-			<div class="blank" id="intro_left">
-				<div id="introtext">
-					<h3 class="color4" style="text-indent:0px; font-weight:700;">Greeting!</h3>
-					<p class="p1L">
-						I am Ping-Kai Hu,
-						currently a PhD candidate working on theoretical physics at UCLA.
-					</p>
-					<p class="p1L">
-						<a class="a1 research" href="#research">My research</a> interests are in the area of high energy physics,
-						especially neutrino physics, dark matter, and a variety of topics in cosmology.
-						Recently, I try to explore a new scenario for cosmic rays with my advisor
-						<a class="a1" href="http://www.physics.ucla.edu/~kusenko/">Alexander Kusenko</a>.
-					</p>
-					<p class="p1L">
-						By the way, this website is still
-                        <span style="font-weight:700;">under construction</span>.
-						<br>
-						<br>
-					</p>
-				</div>
+      <div class="column1">
+        <h2> Ping-Kai Hu </h2>
+        <h4 style="line-height: 0%;"> PhD Candidate in Theoretical Physics</h4>
+        <hr style="opacity=0.2; color:grey;"/>
+        <p class="p1L" style="margin-top:20px;">
+          Department of Physics & Astronomy,<br>
+          Univsersity of California, Los Angeles<br>
+          <br>
+          470 Portola Plaza, <br>
+          Los Angeles, CA 90095-1547<br>
+        </p>
+        <table>
+          <tr>
+            <td class="p1">Office:</td><td class="p1">PAB 1-339</td>
+          </tr>
+          <tr>
+            <td class="p1">Email:</td>
+            <td class="p1"><a class="a1" href="mailto:pingkai.hu@gmail.com">
+              pingkai.hu@gmail.com</a></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td class="p1"><a class="a1" href="mailto:pingkai.hu@physics.ucla.edu">
+              pingkai.hu@physics.ucla.edu</a></td>
+          </tr>
+        </table>
+      </div>
+      <div class="column2">
+        <img src="pic/IMG_0329.jpg"  width="90%" border="0">
+      </div>
+      <hr>
+      <div class="column3" style="text-align:center;">
+				<h3>Education</h3>
 			</div>
-			<div class="blank" id="intro_right">
-				<div class="blank" id="photo">
-					<!--<img src="https://dl.dropboxusercontent.com/u/63140572/Html/Kai.jpg"  width="300" border="0"> -->
-					<img src="http://www.physics.ucla.edu/~pingkai.hu/pic/P1030217.jpg"  width="240" border="0">
-				</div>
-				<div id="contact">
-					<table>
-						<tr>
-							<td class="p2">Email:</td>
-							<td><a class="p1L a1" href="mailto:pingkai.hu@gmail.com">pingkai.hu@gmail.com</a></td>
-						</tr>
-						<tr>
-							<td></td>
-							<td><a class="p1L a1" href="mailto:pingkai.hu@physics.ucla.edu">pingkai.hu@physics.ucla.edu</a></td>
-						</tr>
-						<tr><td> </td></tr>
-						<tr>
-							<td class="p2">Office:</td>
-							<td class="p2">PAB 1-339</td>
-						</tr>
-					</table>
-				</div>
-			</div>
-
-			<hr>
-		</div>
-
-		<!--/////////////////////////
-                Main: CV
-            ///////////////////////// -->
-		<div class="main blank noshow" id="main_CV">
-			<div id="title">
-                <h1> Curriculum Vitae </h1>
-				<!--<img src="./svg/CV.svg" height="60">-->
-				<!-- The font to create this svg is "URW Bookman L" -->
-			</div>
-			<hr>
-			<div class="p1" style="text-laign:right; color:#A3A3A3;
-			float:right; margin-left:0px; height:20px;
-			display: inline; position:relative;">
-				For more detail,
-				a printable verison of my CV will be available
-				<a class="a1" href="">HERE</a>
-                .
-			</div>
-			<div class="blank" id="intro_left">
-				<div id="introtext">
-					<h2 class="color4"> Ping-Kai Hu </h2>
-					<h4 class="color4" style="line-height: 0%;"> PhD Candidate in Theoretical Physics</h4>
-					<hr style="opacity=0.2; color:grey;"/>
-					<p class="p1L" style="margin-top:20px;">
-						Department of Physics & Astronomy,<br>
-						Univsersity of California, Los Angeles<br>
-						<br>
-						470 Portola Plaza, <br>
-						Los Angeles, CA 90095-1547<br>
-					</p>
-					<table>
-						<tr>
-							<td class="p1L">Office:</td>
-							<td class="p1L">PAB 1-339</td>
-						</tr>
-						<tr>
-							<td class="p1L">Email:</td>
-							<td class="p1L"><a class="a1" href="mailto:pingkai.hu@gmail.com">pingkai.hu@gmail.com</a></td>
-						</tr>
-						<tr>
-							<td></td>
-							<td class="p1L"><a class="a1" href="mailto:pingkai.hu@physics.ucla.edu">pingkai.hu@physics.ucla.edu</a></td>
-						</tr>
-					</table>
-					<p><br><br><br></p>
-				</div>
-			</div>
-			<div class="blank" id="intro_right">
-				<div class="blank" id="photo">
-					<img src="http://www.physics.ucla.edu/~pingkai.hu/pic/IMG_0329.jpg"  width="240" border="0">
-				</div>
-
-			</div>
-			<hr>
-			<!-- Education -->
-			<div id="colL">
-				<h3 class="color4" >Education</h3>
-				<p><br><br></p>
-			</div>
-			<div id="colR">
+			<div class="column4">
 				<table>
 					<tr>
 						<td class="p3">Ph.D. in Physics</td>
 						<td class="p3">
 							&nbsp;&nbsp;&nbsp;&nbsp;
-							<a class="a1" href="http://www.ucla.edu">University of California, Los Angeles</a>
+							<a class="a1" href="http://www.ucla.edu">University of California,
+                Los Angeles</a>
 							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 						</td>
 						<td class="p3">in progress</td>
 					</tr>
 					<tr>
 						<td class="p3">M.S. in Physics</td>
-						<td class="p3"><a class="a1"href="http://www.nthu.edu.tw">Naional Tsing Hua University</a>, Taiwan</td>
+						<td class="p3"><a class="a1"href="http://www.nthu.edu.tw">Naional
+              Tsing Hua University</a>, Taiwan</td>
 						<td class="p3">2012</td>
 					</tr>
 					<tr>
@@ -260,46 +204,40 @@
 					</tr>
 				</table>
 			</div>
-			<!-- Honor -->
-			<div id="colL">
-				<h3 class="color4" >Honor</h3>
+      <div class="column3" style="text-align:center;">
+				<h3>Honor</h3>
 			</div>
-			<div id="colR">
-				<table>
+      <div class="column4">
+        <table>
 					<tr>
 						<td class="p3L">UCLA Physics Department Fellowship</td>
-						<td class="p3">&nbsp;&nbsp;&nbsp;&nbsp; 2013 - &nbsp;&nbsp;&nbsp;&nbsp;</td>
+						<td class="p3">&nbsp;&nbsp;&nbsp;&nbsp; 2013 -
+              &nbsp;&nbsp;&nbsp;&nbsp;</td>
 					</tr>
 					<tr>
 						<td class="p3L">Pai Hsiao-yen Police Children Scholarship</td>
 						<td class="p3">2009</td>
 					</tr>
 				</table>
+      </div>
+      <div class="column3" style="text-align:center;">
+				<h3>Conference</h3>
 			</div>
-			<!-- Conference -->
-			<div id="colL">
-				<h3 class="color4" >Conference</h3>
-			</div>
-			<div id="colR">
-				<table>
-					<tr>
-						<td> &nbsp; </td>
-					</tr>
-                    <tr>
+      <div class="column4">
+        <table>
+          <tr>
 						<td class="p3L">
 							<a class="a1" href="http://www.phys.nthu.edu.tw/~dark/2016/prog.php">
-                                4th International Workshop on Dark Matter, Dark Energy and Matter-Antimatter Asymmetry
-							</a>
-                            , Taiwan
+              4th International Workshop on Dark Matter, Dark Energy and
+              Matter-Antimatter Asymmetry</a>, Taiwan
 						</td>
 						<td class="p3">&nbsp;&nbsp;&nbsp;&nbsp; 2016</td>
 					</tr>
                     <tr>
 						<td class="p3L">
 							<a class="a1" href="https://conferences.pa.ucla.edu/pacific2016/">
-								Particle Astrophysics and Cosmology Including Fundamental InteraCtions
-							</a>
-                            , Moorea, French Polynesia
+								Particle Astrophysics and Cosmology Including Fundamental
+                InteraCtions</a>, Moorea, French Polynesia
 						</td>
 						<td class="p3">&nbsp;&nbsp;&nbsp;&nbsp; 2016</td>
 					</tr>
@@ -307,181 +245,143 @@
 						<td> &nbsp; </td>
 					</tr>
 				</table>
-			</div>
-
-			<!-- Publication -->
-			<p><br><br><br></p>
-			<hr>
-		</div>
-
-		<!--/////////////////////////
-                Main: Research
-            ///////////////////////// -->
-		<div class="main blank noshow" id="main_research">
-			<div id="title">
-                <h1> Research / Study </h1>
-                <!--<img src="./svg/research.svg" height="60">-->
-				<!-- The font to create this svg is "URW Bookman L" -->
+      </div>
+      <div style="height: 50px">&nbsp;</div>
+      <br>
+      <hr>
+    </div>
+    <!-- Research -->
+    <div id="research" class="torso noshow">
+      <div class="title">
+        <h1> Research / Study </h1>
 			</div>
 			<hr>
-			<div class="blank" id="intro_left">
-				<div id="introtext">
-					<h2 class="color4"></h2>
-                    <h3 class="color4" style="text-indent:0px; font-weight:700;">Dark Cosmic Rays</h2>
-					<p class="p1L">
-                    The origin of ulltra-high-energy cosmic rays is still not clear.
-                    There are two different kinds of approaches to generate cosmic rays with high energy: “bottom-up” and “top-down”.
-                    <br>
-                    <br>
-                    The approach of “bottom-up” is to accelerate charged particles by electromagnetic fields.
-                    It requires the mechanism like Fermi acceleration to boost particles from low energy to high energy.
-                    The alternative “top-down” approach is to generate high-energy particles by heavy-particle decays or pair annihilations, in which case we need heavy particles beyond the Standard Model.
-                    <br>
-                    <br>
-                    How about we consider a model beyond the Standard Model, but still use the “bottom-up” approach?
-                    This idea leads us to the scenario of “<b>dark cosmic rays</b>”.
-                    <br>
-                    <br>
-                    To realise the scenario, what we need is just a long-ranged force in the dark sector.
-                    The simplest way is to introduce an U(1) gauge symmetry ...
-                    <br>
-                    <br>
-                    You can find our paper on arXiv:
-                    <a class="a1" href="https://arxiv.org/abs/1611.04599">1611.04599</a>
-                    <br>
-                    <br>
-					</p>
-				</div>
+			<div class="column1">
+        <h3 tyle="text-indent:0px; font-weight:700;">Dark Cosmic Rays</h2>
+				<p class="p1">
+          The origin of ulltra-high-energy cosmic rays is still not clear.
+          There are two different kinds of approaches to generate cosmic rays
+          with high energy: “bottom-up” and “top-down”.</p>
+        <p class="p1">
+          The approach of “bottom-up” is to accelerate charged particles by
+          electromagnetic fields. It requires the mechanism like Fermi
+          acceleration to boost particles from low energy to high energy.
+          The alternative “top-down” approach is to generate high-energy
+          particles by heavy-particle decays or pair annihilations, in which
+          case we need heavy particles beyond the Standard Model.</p>
+        <p class="p1">
+          How about we consider a model beyond the Standard Model, but still
+          use the “bottom-up” approach? This idea leads us to the scenario of “
+          <b>dark cosmic rays</b>”.</p>
+        <p class="p1">
+          To realise the scenario, what we need is just a long-ranged force in
+          the dark sector. The simplest way is to introduce an U(1) gauge
+          symmetry ... </p>
+        <p class="p1">
+          You can find our paper on arXiv:
+          <a class="a1" href="https://arxiv.org/abs/1611.04599">1611.04599</a>
+				</p>
 			</div>
-			<div class="blank" id="intro_right">
-				<div class="blank" id="photo">
-					<!-- Gauge Theory of Elementary Particle Physics -->
-					<img src="http://www.physics.ucla.edu/~pingkai.hu/pic/LFL.jpg"  width="240" border="0">
-				</div>
+			<div class="column2" style="padding-top:100px; text-align:center;">
+				<img src="pic/LFL.jpg"  width="90%" margin="auto">
+			</div>
+      <br>
+			<hr>
+    </div>
+    <!-- Drawing -->
+    <div id="drawing" class="torso noshow">
+      <div class="title">
+        <h1> Drawing </h1>
 			</div>
 			<hr>
-		</div>
-
-		<!--/////////////////////////
-                Main: Drawing
-            ///////////////////////// -->
-		<div class="main blank noshow" id="main_drawing">
-			<div id="title">
-                <h1> Drawing </h1>
-                <!--<img src="./svg/drawing.svg" height="60">-->
-				<!-- The font to create this svg is "URW Bookman L" -->
+			<div class="column1">
+        <br><br><br><br><br><br><br>
+				<p class="p1">
+          Drawing is one of my hobbies.</p>
+        <p class="p1">
+          Currently, I draw on Krita.</p>
+			</div>
+			<div class="column2" style="text-align:center;">
+				<img src="pic/Kai.png"  width="100%" border="0">
 			</div>
 			<hr>
-			<div class="blank" id="intro_left">
-				<div id="introtext">
-					<h2 class="color4"></h2>
-                    <p class="p1L">
-					Drawing is one of my hobbies.
-                    <br>
-                    <br>
-                    Currently, I draw on Krita.
-                    <br>
-					</p>
-				</div>
-			</div>
-			<div class="blank" id="intro_right">
-				<div class="blank" id="photo">
-					<img src="http://www.physics.ucla.edu/~pingkai.hu/pic/Kai.png"  width="240" border="0">
-				</div>
+      <div class="column1">
+        <br>
+        <h3>Digital Painting</h3>
+        <br>
+        <img src="http://img10.deviantart.net/1f74/i/2016/179/9/4/practice__004__carpentry_by_pingkaihu-da7zcc3.jpg" height="300">
+        <br><br><br><br><br><br><br>
+      </div>
+      <br>
+      <hr>
+    </div>
+    <!-- Teaching -->
+    <div id="teaching" class="torso noshow">
+      <div class="title">
+        <h1> Teaching </h1>
 			</div>
 			<hr>
-            <div id="text">
-                <br>
-                <h3>Digital Painting</h3>
-                <br>
-                <img src="http://img10.deviantart.net/1f74/i/2016/179/9/4/practice__004__carpentry_by_pingkaihu-da7zcc3.jpg" height="300">
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-            </div>
-            <hr>
-		</div>
-
-		<!--/////////////////////////
-                Main: Teaching
-            ///////////////////////// -->
-		<div class="main blank noshow" id="main_teaching">
-			<div id="title">
-                <h1> Teaching </h1>
-				<!--<img src="./svg/teaching.svg" height="60">-->
-				<!-- The font to create this svg is "URW Bookman L" -->
-			</div>
-			<hr>
-			<!--<img src="https://dl.dropboxusercontent.com/u/63140572/Html/IMAG1873.jpg"  width="850" border="0">-->
-			<div class="blank" id="intro_left">
-				<div id="introtext">
+			<div class="column1">
+          <br><br><br>
 					<p class="p1">
-						This page is all about my teaching.
-
-					</p>
-				</div>
+						This page is all about my teaching.</p>
 			</div>
-			<div class="blank" id="intro_right">
-				<div class="blank" id="photo">
-					<img src="http://www.physics.ucla.edu/~pingkai.hu/pic/IMAG1162.jpg"  width="240" border="0">
-				</div>
+			<div class="column2" style="margin-top:30px; text-align:center;">
+				<img src="pic/IMAG1162.jpg"  width="80%" border="0">
 			</div>
 			<hr>
-			<div id="text">
+			<div style="padding-left:5%;">
 				<h3 class="color4" style="text-indent:10px;">Lecture Notes</h3>
 				<ul>
-					<li class="p1"><a class="a1" href="https://www.dropbox.com/s/37tzd03u74lf8zo/D_notation.pdf">
+					<li class="p1"><a class="a1"
+            href="https://www.dropbox.com/s/37tzd03u74lf8zo/D_notation.pdf">
 						Notes on Dirac Notation</a></li>
-                    <br>
+            <br><br><br>
 				</ul>
 			</div>
 			<hr>
-			<div id="text">
+			<div style="padding-left:5%;">
 				<h3 class="color4" style="text-indent:10px;">Courses</h3>
 				<ul>
 					<li class="p1">Physics 115 - Quantum Mechanics</li>
-                    <br>
-                    <li class="p1">Physics 231B - Methods of Mathematical Physics</li>
-                    <br>
-                    <li class="p1">Physics Physics for Scientists and Engineers</li>
-                    <br>
-                    <li class="p1">Physics Lab</li>
-                    <br><br>
+          <br>
+          <li class="p1">Physics 231B - Methods of Mathematical Physics</li>
+          <br>
+          <li class="p1">Physics Physics for Scientists and Engineers</li>
+          <br>
+          <li class="p1">Physics Lab</li>
+          <br><br>
 				</ul>
 			</div>
+      <br>
 			<hr>
-		</div>
-
-		<!--
-                Here is the external links
-        -->
-		<div style="text-align:center;">
-			<table style="margin: auto; padding-bottom:20px;">
+    </div>
+    <div class="footer" style="text-align:center;">
+      <table class="p2" style="margin: auto; padding-bottom:20px;">
 				<tr>
-						<td><span class="p2">LINKS:</span></td>
+						<td><span>LINKS:</span></td>
 						<td>&nbsp;&nbsp;&nbsp;</td>
-						<td class="p2"><a class="a1" href="http://www.pa.ucla.edu/"> UCLA Physics </a></td>
+						<td>
+              <a class="a1" href="http://www.pa.ucla.edu/"> UCLA Physics </a>
+            </td>
 						<td>&nbsp;&nbsp;&nbsp;</td>
-						<td class="p2"><a class="a1" class="a1" href="http://tepapp.physics.ucla.edu/"> UCLA TEPAPP Group </a></td>
+						<td>
+              <a class="a1" href="http://tepapp.physics.ucla.edu/"> UCLA TEPAPP Group </a>
+            </td>
 						<td>&nbsp;&nbsp;&nbsp;</td>
-						<td class="p2"><a class="a1" href="http://tep.physics.ucla.edu/people.html"> UCLA TEP Group </a></td>
+						<td >
+              <a class="a1" href="http://tep.physics.ucla.edu/people.html"> UCLA TEP Group </a>
+            </td>
 						<td>&nbsp;&nbsp;&nbsp;</td>
-						<td class="p2"><a class="a1" href="http://www.phys.nthu.edu.tw/index_ch.html"> NTHU Physics </a></td>
+						<td>
+              <a class="a1" href="http://www.phys.nthu.edu.tw/index_ch.html"> NTHU Physics </a>
+            </td>
 				</tr>
 			</table>
-		</div>
-
-		<!--
-                Colored bottom division
-        -->
-		<div class="color1" id="bottom">
-
-			<p class="p2" style="text-align:center;"> Copyright &copy; 2018 by  Ping-Kai Hu </p>
-
-		</div>
-	</body>
-
+      <div class="color1" style="height:100px; padding-top:30px;">
+        <p class="p2" style="text-align:center; opacity:0.5;">
+          Copyright &copy; 2018 by  Ping-Kai Hu </p>
+      </div>
+    </div>
+  </body>
 </html>

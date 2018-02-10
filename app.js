@@ -1,74 +1,29 @@
 var main = function() {
-
 	//////////////////////////////////////////////////////////////////////
 	//
 	// Switch Branching Pages // Home / CV / Research / Drawing / Teaching
 	//
 	//////////////////////////////////////////////////////////////////////
-	$('.home').click(function() {
+	var map = ['#home','#CV','#research','#drawing','#teaching']
+	$('a').click( function() {
+		var id = $(this).attr('href');
+		var index = map.indexOf(id);
+		if (index >= 0) {
+			$('div.nav_here').addClass('nav').removeClass('nav_here');
+			$("a.nav").eq(index).children().addClass('nav_here').removeClass('nav')
 
-		// Switch Pages
-		$('.main.show').fadeOut(0).removeClass('show').addClass('noshow');
-		$('#main_home').fadeIn(100).addClass('show').removeClass('noshow');
-
-		// Switch Navigators
-		$('.a_navi_here').addClass('a_navi').removeClass('a_navi_here');
-		$('a.home').children().removeClass('a_navi').addClass('a_navi_here');
-	});
-	/* Experimental toggle buttom
-	$('.CV_branch').click(function() {
-
-		$(this).next().toggle(200);
-	});*/
-	$('.CV').click(function() {
-
-		// Switch Pages
-		$('.main.show').fadeOut(0).removeClass('show').addClass('noshow');
-		$('#main_CV').fadeIn(200).addClass('show').removeClass('noshow');
-
-		// Switch Navigators
-		$('.a_navi_here').addClass('a_navi').removeClass('a_navi_here');
-		$('a.CV').children().removeClass('a_navi').addClass('a_navi_here');
-	});
-	$('.research').click(function() {
-
-		// Switch Pages
-		$('.main.show').fadeOut(0).removeClass('show').addClass('noshow');
-		$('#main_research').fadeIn(200).addClass('show').removeClass('noshow');
-
-		// Switch Navigators
-		$('.a_navi_here').addClass('a_navi').removeClass('a_navi_here');
-		$('a.research').children().removeClass('a_navi').addClass('a_navi_here');
-	});
-	$('.drawing').click(function() {
-
-		// Switch Pages
-		$('.main.show').fadeOut(0).removeClass('show').addClass('noshow');
-		$('#main_drawing').fadeIn(200).addClass('show').removeClass('noshow');
-
-		// Switch Navigators
-		$('.a_navi_here').addClass('a_navi').removeClass('a_navi_here');
-		$('a.drawing').children().removeClass('a_navi').addClass('a_navi_here');
-	});
-	$('.teaching').click(function() {
-
-		// Switch Pages
-		$('.main.show').fadeOut(0).removeClass('show').addClass('noshow');
-		$('#main_teaching').fadeIn(200).addClass('show').removeClass('noshow');
-
-		// Switch Navigators
-		$('.a_navi_here').addClass('a_navi').removeClass('a_navi_here');
-		$('a.teaching').children().removeClass('a_navi').addClass('a_navi_here');
-	});
-
+			$('.torso').fadeOut(0).addClass('noshow');
+			$(id).fadeIn(100).removeClass('noshow');
+		}
+	})
 	//////////////////////////////////////////////
 	//  To Show or Disable 'HELP Panel'
 	//////////////////////////////////////////////
 	//  Toggle HELP panel
-	$(document).keypress(function(event) {
 
-		// keyCode '191' === '/'  -->  shift + / = '?'
-		if(event.shiftKey || event.which === 191) {
+	// keyCode '191' === '/'  -->  shift + / = '?'
+	$(document).keydown(function(event) {
+		if (event.shiftKey && event.which == 191) {
 			if($('.help').css('display') === 'none') {
 				$('.help').fadeIn(100);
 			}
@@ -83,7 +38,7 @@ var main = function() {
 	});
 	//  Close buttom
 	$('.help_close').mouseenter(function() {
-		$(this).css('opacity','0.7');
+		$(this).css('opacity','0.8');
 	});
 	$('.help_close').mouseleave(function() {
 		$(this).css('opacity','0.3');
@@ -93,12 +48,11 @@ var main = function() {
 	//  Show draggable item
 	//////////////////////////////////////////////
 	$(document).keypress(function(event) {
-
 		// keyCode '120' --> 'x'
 		if(event.which === 120) {
 			$('body').append(
 			'<div class="xd" style="position:fixed; right:50px; bottom:50px;">'+
-			'<img src="https://dl.dropboxusercontent.com/u/63140572/Html/Pika.png" width="400"/>'+'</div>'
+			'<img src="pic/Pika.png" width="400"/>'+'</div>'
 			);
 			$('.xd').effect('bounce',{times:3},500);
 			$('.xd').draggable();

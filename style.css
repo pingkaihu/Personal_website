@@ -1,0 +1,216 @@
+body{
+	background-color: white;
+	/* background-color: #F4F4F4; */
+	/* background-color: #D6D6D6; */
+}
+div {
+	/* border: 0.2px dashed black; */
+}
+h1 {  /* Huge Title */
+	font-size: 50px;
+	font-family: 'Julius Sans One', sans-serif;
+	/*font-family: 'Tenor Sans', sans-serif;*/
+	/*font-family: 'Lobster', sans-serif;*/
+	/*font-family: 'ubuntu', sans-serif;*/
+	/*font-family: 'PT Sans Narrow', sans-serif; */
+	/* font-family: 'Cormorant Upright', serif; */
+	font-style: normal;
+	font-weight: 700;
+	color: #1a1a1a;
+}
+/* Ping-Kai Hu in Main: CV */
+h2 {
+	font-size: 32px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+}
+/* PhD Candidate in Theoretical Physics */
+h4 {
+	font-size: 20px;
+	font-family: 'Roboto Condensed', sans-serif;
+	/*font-family: 'Fjalla One', sans-serif;*/
+	font-weight: 400;
+}
+/* in CV : Education, Publication, ... */
+h3 {
+	font-size: 24px;
+	font-family: 'Roboto', sans-serif, Helvetica, Arial;
+	font-weight: 300;
+}
+p {
+	font-size: 16px;
+	line-height: 20px;
+	font-family: sans-serif;
+	color: #1C1C1C;
+	word-spacing: normal;
+}
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+	display: inline-block;
+	overflow: auto;
+}
+.nav-bar{
+	/* height: 30px; */
+	width: 960px;
+	margin: auto;
+	overflow: auto;
+	background-color: white;
+	border-bottom: 0.2px solid #0059b3;
+}
+.torso{
+  margin: auto;
+  width: 850px;
+  overflow: auto;
+	z-index: -1;
+}
+.footer{
+	height: 15%;
+	width: 100%;
+}
+.title{
+	padding-top: 120px;
+	padding-left: 8%;
+	width: 60%;
+	display: inline-block;
+}
+.column1{
+  width: 50%;
+  padding: 4.8%;
+  display: inline-block;
+	vertical-align: top;
+}
+.column2{
+  width: 30%;
+  padding: 4.8%;
+  /* float: left; */
+  display: inline-block;
+	vertical-align: top;
+}
+.column3 {
+	width: 25%;
+	margin-top: 40px;
+	display: inline-block;
+	vertical-align: top;
+}
+.column4 {
+	width: 72%;
+	margin-top: 40px;
+	padding-left: 2%;
+	display: inline-block;
+	vertical-align: top;
+	border-left: 1px solid #D1D1D1;
+}
+.color1 {
+	background-color: #316EF8;
+	/* background-color: #2D5EDA; */
+}
+.p1 {
+	font-size: 16px;
+	line-height: 20px;
+	font-family: sans-serif;
+	color: #1C1C1C;
+	word-spacing: length;
+}
+/* font for bottom words */
+.p2 {
+	font-size: 14px;
+	font-family: 'Roboto', sans-serif;
+	color: #1C1C1C;
+}
+/* for some words in CV */
+.p3 {
+	font-size: 16px;
+	line-height: 35px;
+	font-family: sans-serif;
+	color: #1C1C1C;
+	word-spacing: length;
+	text-align: center;
+}
+.p3L {
+	font-size: 16px;
+	line-height: 30px;
+	font-family: sans-serif;
+	color: #1C1C1C;
+	word-spacing: length;
+}
+a.a1:link, a.a1:visited {
+    /* color: #5285F8; */
+    color: #2A57C7;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+a.a1:hover {
+	color: #FCE62B;
+	background-color: #5285F8;
+}
+
+a.nav:link, a.nav:visited {
+	color: #6982E5;
+}
+a.nav:hover {
+	color: white;
+	background-color: #C8D6F8;
+}
+.nav{
+	font-size: 18px;
+	font-family: 'Roboto', sans-serif;
+	text-decoration: none;
+}
+/* Navigation Button Layout */
+div.nav {
+	height: 24px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	margin: 6px;
+	text-align: center;
+	border-radius: 3px;
+}
+div.nav:hover {
+	color: white;
+	background-color: #6982E5;
+}
+div.nav_here {
+	color: white;
+	background-color: #4566E7;
+	height: 24px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	margin: 6px;
+	text-align: center;
+	border-radius: 3px;
+}
+.noshow {
+	display: none;
+}
+.help {
+	height: 600px;
+	width: 600px;
+	margin-top: -300px;
+	margin-left: -300px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	color: white;
+	background-color: black;
+	border-radius: 10px;
+	opacity: 0.9;
+	z-index: 10;
+}
+.help_close {
+	/* border: 1.0px solid white; */
+	border-radius: 4px;
+	height: 20px;
+	width: 20px;
+	position:relative;
+	top: 15px;
+	left: 560px;
+	opacity: 0.3;
+}
+.p4 {
+	/* font-size: 18px; */
+	/* font-family: Monospace, Helvetica, Arial; */
+	color: white;
+}
