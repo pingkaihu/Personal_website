@@ -1,0 +1,15 @@
+div {
+  border: 0.2px dashed black;
+}
+h2 {
+	font-size: 28px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+}
+p {
+	font-size: 18px;
+	line-height: 20px;
+	font-family: 'Roboto', sans-serif;
+	color: #1C1C1C;
+	word-spacing: normal;
+}
