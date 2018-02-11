@@ -1,11 +1,13 @@
 # Personal Website
 It's all about my personal website. 
 
-You can check the website: [http://www.physics.ucla.edu/~pingkai.hu/](http://www.physics.ucla.edu/~pingkai.hu/)
+You can check the links below.
 
-### Content
+## Content
 
-* **Main page** (index.html)  
+* ### Main page (index.html)  
+
+    - [http://www.physics.ucla.edu/~pingkai.hu/](http://www.physics.ucla.edu/~pingkai.hu/)
     
     - Main page includes the introduction, CV, researches... etc.  
     
@@ -15,13 +17,19 @@ You can check the website: [http://www.physics.ucla.edu/~pingkai.hu/](http://www
     - Google Fonts are used for title and some content.
     
     - The JavaScript supports page switch and help panel (by typing '?').  
+
+* ### Gallery page
+
+    - [http://www.physics.ucla.edu/~pingkai.hu/gallery.html](http://www.physics.ucla.edu/~pingkai.hu/gallery.html)
     
-* **Cht page** (cht.html)  
+    - still under construction.
+
+* ### Cht page** (cht.html)  
 
     - Traditional chinese version.   
 
-### To Do List
+## To Do List
 
 * Conversion Table 
 
-* Gallery page
+
