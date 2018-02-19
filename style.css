@@ -1,10 +1,14 @@
 body{
-	background-color: white;
-	/* background-color: #F4F4F4; */
+	/* background-color: white; */
+	background-color: #FCFCFC;
 	/* background-color: #D6D6D6; */
 }
 div {
 	/* border: 0.2px dashed black; */
+}
+hr {
+	border-width: 0.5px;
+    border-color: #e6e6e6;
 }
 h1 {  /* Huge Title */
 	font-size: 50px;
@@ -57,14 +61,18 @@ p {
 	width: 960px;
 	margin: auto;
 	overflow: auto;
-	background-color: white;
+	/* background: white; */
+	background-color: #FCFCFC;
 	border-bottom: 0.2px solid #0059b3;
 }
 .torso{
   margin: auto;
   width: 850px;
+	padding-left: 40px;
+	padding-right: 40px;
   overflow: auto;
-	z-index: -1;
+	background-color: white;
+	z-index: -10;
 }
 .footer{
 	height: 15%;
@@ -213,4 +221,22 @@ div.nav_here {
 	/* font-size: 18px; */
 	/* font-family: Monospace, Helvetica, Arial; */
 	color: white;
+}
+.hidden .hiddentext {
+	visibility: hidden;
+  width: 100px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the hiddentext*/
+	position: absolute;
+	z-index: 1;
+	top: 20px;
+	left: 25px;
+}
+.hidden:hover .hiddentext{
+	visibility: visible;
 }
